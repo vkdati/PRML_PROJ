@@ -1,0 +1,65 @@
+# Mid-Term Report: Resume Screening Project
+
+## 1. Introduction and Problem Statement
+In today's competitive job market, organizations receive thousands of resumes, making it challenging to identify the best candidates efficiently. To address this challenge, our goal is to develop an **automated resume classification system** that accurately categorizes resumes into relevant job roles. By leveraging both **real-world and synthetic data**, we aim to improve classification accuracy, reduce bias, and enhance diversity in candidate selection.
+
+## 2. Dataset Description
+
+### 2.1 Real Dataset
+- **Source:** `resume_dataset_git(RR)`
+- **Total Records:** 1,206
+- **Columns:**
+  - `Category` - The target label for classification.
+  - `Cleaned_Resume` - Preprocessed and normalized resume text.
+- **Purpose:**
+  - Provides real-world resumes for supervised model training.
+  - Covers diverse categories such as Data Science, Java Developer, HR, Sales, and more.
+
+### 2.2 Synthetic Dataset
+- **Source:** `Hugging_Face_Dataset`
+- **Total Records:** 32,480
+- **Columns:**
+  - `Category` - Synthetic task-based descriptions representing job categories.
+  - `Cleaned_Resume` - Preprocessed and generated resume text.
+- **Purpose:**
+  - Augments the real dataset to enhance category representation.
+  - Enables model robustness through additional data.
+
+## 3. Initial Preprocessing and Cleaning
+To ensure consistency and reliability, we applied the following preprocessing steps to both datasets:
+- **Byte Encoding Removal:** Cleaned artifacts such as `b'...'` and special characters.
+- **Lowercase Conversion:** Standardized text for uniform feature extraction.
+- **Special Character Removal:** Removed unnecessary symbols to enhance model efficiency.
+- **Whitespace Normalization:** Ensured consistent spacing between words.
+- **Column Alignment:** Standardized column names (`Category`, `Cleaned_Resume`) for merging.
+
+## 4. Proposed Approaches
+
+### 4.1 Model Development
+- **Classification Models:**
+  - Naive Bayes, Logistic Regression, and Support Vector Machine (SVM).
+  - Deep learning models (BERT/DistilBERT) for contextual embeddings.
+
+### 4.2 Feature Extraction
+- **TF-IDF (Term Frequency-Inverse Document Frequency):** Baseline feature extraction.
+- **Word Embeddings:** Use of pretrained models like BERT for semantic context.
+
+### 4.3 Bias Mitigation
+- **Data Augmentation:** Use synthetic data to balance underrepresented categories.
+- **Oversampling and Undersampling:** Address category imbalance in real dataset.
+
+## 5. Early Results and Observations
+
+### 5.1 Data Distribution
+- **Real Dataset:** Balanced across 25 categories with average text length of 3,160 characters.
+- **Synthetic Dataset:** Covers 26 synthetic categories with average text length of 6,194 characters.
+
+### 5.2 Alignment and Cleaning
+- Successfully aligned both datasets by ensuring column name consistency.
+- Cleaned all resumes to remove unwanted artifacts and improve feature quality.
+
+## 6. Next Steps
+- **Model Training:** Train supervised models using combined datasets.
+- **Evaluation Metrics:** Precision, Recall, F1-score, and Bias detection.
+- **UI/UX Integration:** Build an interactive interface for resume classification.
+
