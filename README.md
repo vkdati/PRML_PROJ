@@ -1,11 +1,3 @@
- Initial Plan:
- Design a machine learning-powered resume screening system to improve hiring efficiency while ensuring fairness and transparency.
- Develop models to extract transferable skills, quantify project impact, and detect leadership traits using NLP and pattern recognition.
- Implement Gaussian Mixture Models (GMM), and K-means clustering to classify career types.
- Integrate Google Cloud for real-time deployment and interactive bias audit tools for recruiters.
-
-------------------------------------------------------------------------------------------------------------------------------
-
 🧠 RESUME CLASSIFIER
 
 🚀 Problem Statement
