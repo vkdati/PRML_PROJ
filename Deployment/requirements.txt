@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+scikit-learn
+joblib
+PyPDF2
+numpy
+scipy
+sentence-transformers
