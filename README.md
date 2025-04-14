@@ -17,7 +17,8 @@ In today's fast-paced recruitment environment, HR professionals and recruiters s
 - Assigning the right job role often requires contextual understanding of skills, experience, and keywords.
 
 ✅ Solution
-Resume Classifier is an intelligent machine learning-based solution that classifies resumes into suitable job roles such as "HR", "Engineer", "Architect", etc. It uses NLP techniques to extract meaningful patterns and classifies resumes based on their content.
+- Resume Classifier is an intelligent machine learning-based solution that classifies resumes into suitable job roles such as "HR", "Engineer", "Architect", etc.
+- It uses NLP techniques to extract meaningful patterns and classifies resumes based on their content.
 
 🧰 Features
 - Automatically reads and parses resumes.
